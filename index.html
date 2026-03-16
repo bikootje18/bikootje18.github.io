@@ -2,11 +2,14 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Service Pack BV — Europese hub voor logistiek en co-packing</title>
 <meta name="description" content="Service Pack BV is uw Europese logistieke en co-packing partner. Fulfillment, warehousing, labeling, rework, assembly en container lossen. Op 30 minuten van Rotterdam en Antwerpen.">
 <link rel="canonical" href="https://servicepack.nl/">
+<link rel="alternate" hreflang="nl" href="https://servicepack.nl/">
+<link rel="alternate" hreflang="en" href="https://servicepack.nl/en/">
+<link rel="alternate" hreflang="x-default" href="https://servicepack.nl/">
 <meta property="og:title" content="Service Pack BV — Europese hub voor logistiek en co-packing">
 <meta property="og:description" content="Fulfillment, warehousing, labeling, rework, assembly en container lossen. Snel inzetbaar, schaalbaar en betrouwbaar.">
 <meta property="og:url" content="https://servicepack.nl/">
@@ -48,10 +51,17 @@
       <div class="nav-links">
         <a href="/" class="nav-active">Home</a>
         <a href="/diensten/">Diensten</a>
-        <a href="/over-ons.html">Over ons</a>
         <a href="/sectoren.html">Sectoren</a>
         <a href="/cases.html">Cases</a>
         <a href="/contact.html">Contact</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-btn" type="button" onclick="toggleNavDropdown(this)">Over ons <span class="nav-dropdown-arrow">▾</span></button>
+          <div class="nav-dropdown-menu">
+            <a href="/over-ons.html">Over ons</a>
+            <a href="/mvo.html">MVO</a>
+            <a href="/blog.html">Blog</a>
+          </div>
+        </div>
         <a href="/contact.html" class="nav-cta">Vraag offerte aan</a>
       </div>
       <div class="lang-switch" aria-label="Taal kiezen">
@@ -67,10 +77,18 @@
   <div class="mobile-menu" id="mobile-menu">
     <a href="/">Home</a>
     <a href="/diensten/">Diensten</a>
-    <a href="/over-ons.html">Over ons</a>
+    
     <a href="/sectoren.html">Sectoren</a>
     <a href="/cases.html">Cases</a>
     <a href="/contact.html">Contact</a>
+    <div class="mobile-dropdown">
+      <button class="mobile-dropdown-btn" type="button" onclick="toggleMobileDropdown(this)">Over ons <span class="nav-dropdown-arrow">▾</span></button>
+      <div class="mobile-dropdown-items">
+        <a href="/over-ons.html">Over ons</a>
+        <a href="/mvo.html">MVO</a>
+        <a href="/blog.html">Blog</a>
+      </div>
+    </div>
     <a href="/contact.html" class="mobile-cta-btn">Vraag offerte aan →</a>
     <div class="mobile-lang">
       <a href="/" class="mobile-lang-link active">NL</a>
@@ -284,40 +302,40 @@
     <div class="cases-grid">
       <div class="case-card">
         <div class="case-header">
-          <div class="case-tags"><span class="case-tag">E-commerce</span><span class="case-tag">Repacking</span></div>
-          <h3>Seizoenscampagne: 40.000 cadeausets in twee weken</h3>
+          <div class="case-tags"><span class="case-tag">Consumentenproducten</span><span class="case-tag">Labeling · Assembly</span></div>
+          <h3>500.000 producten per maand gelabeld en geassembleerd</h3>
         </div>
         <div class="case-body">
           <div class="case-label">Situatie</div>
-          <p>Online retailer had extra capaciteit nodig voor het samenstellen en omverpakken van cadeausets tijdens de feestdagen.</p>
+          <p>Een consumentenproductenmerk vroeg of wij maandelijks 500.000 producten konden stickeren en assembleren voor de retailmarkt.</p>
           <div class="case-result">
-            <p>✓ 40.000 eenheden binnen deadline · Nul verpakkingsfouten · Opdracht herhaald</p>
+            <p>✓ Al 3 jaar een vaste partner · 500.000 stuks per maand · Samenwerking uitgebreid</p>
           </div>
         </div>
       </div>
       <div class="case-card">
         <div class="case-header">
-          <div class="case-tags"><span class="case-tag">Fabrikant</span><span class="case-tag">Rework</span></div>
-          <h3>Productieafwijking: 15.000 stuks herlabeld en verpakt</h3>
+          <div class="case-tags"><span class="case-tag">Groothandel · B2B</span><span class="case-tag">Fulfillment</span></div>
+          <h3>Dagelijkse B2B-fulfillment voor een feestartikelen groothandel</h3>
         </div>
         <div class="case-body">
           <div class="case-label">Situatie</div>
-          <p>Fabrikant ontdekte een labelingsfout bij 15.000 exportproducten met een harde verschepingsdeadline.</p>
+          <p>Een feestartikelen groothandel zocht een partner voor wekelijkse containerontvangst en dagelijkse orderpicking op artikelniveau.</p>
           <div class="case-result">
-            <p>✓ 100% inspectie uitgevoerd · Op tijd verscheept · Volledige documentatie</p>
+            <p>✓ Al 8 jaar vaste fulfillmentpartner · Dagelijkse uitvoering</p>
           </div>
         </div>
       </div>
       <div class="case-card">
         <div class="case-header">
-          <div class="case-tags"><span class="case-tag">Importeur</span><span class="case-tag">Labeling</span></div>
-          <h3>EU-regelgeving: 80.000 producten opnieuw gelabeld</h3>
+          <div class="case-tags"><span class="case-tag">Fabrikant</span><span class="case-tag">Assembly · Fulfillment</span></div>
+          <h3>Complete uitbesteding van assemblage en orderpicking</h3>
         </div>
         <div class="case-body">
           <div class="case-label">Situatie</div>
-          <p>Importeur moest drie containers producten voorzien van nieuwe EU-labels vóór distributie naar NL en BE.</p>
+          <p>Een fabrikant besteedde zijn volledige assemblage- en pickingafdeling uit — inclusief eigen machines, nu operationeel bij Service Pack.</p>
           <div class="case-result">
-            <p>✓ 80.000 stuks conform regelgeving · Gedistribueerd in 3 weken · Geen douaneproblemen</p>
+            <p>✓ Volledige ontzorging · Dagelijkse uitvoering · Eigen machines bij ons</p>
           </div>
         </div>
       </div>
@@ -366,7 +384,6 @@
       <div class="footer-col">
         <h4>Bedrijf</h4>
         <a href="/">Home</a>
-        <a href="/over-ons.html">Over ons</a>
         <a href="/sectoren.html">Sectoren</a>
         <a href="/cases.html">Cases</a>
         <a href="/contact.html">Contact</a>
@@ -396,6 +413,19 @@
 </footer>
 
 <script>
+function toggleMobileDropdown(btn) {
+  btn.classList.toggle('open');
+  btn.nextElementSibling.classList.toggle('open');
+}
+function toggleNavDropdown(btn) {
+  const dd = btn.closest('.nav-dropdown');
+  dd.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-dropdown')) {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(d){ d.classList.remove('open'); });
+  }
+});
 function toggleMenu() {
   const menu = document.getElementById('mobile-menu');
   const hamburger = document.getElementById('hamburger');

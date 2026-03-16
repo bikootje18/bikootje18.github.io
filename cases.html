@@ -2,11 +2,14 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cases — Service Pack BV | Concrete resultaten in fulfillment en co-packing</title>
 <meta name="description" content="Bekijk concrete cases van Service Pack BV: cadeausets assembleren, rework van exportproducten, EU-labeling voor importeurs en seizoensverpakkingen voor retail.">
 <link rel="canonical" href="https://servicepack.nl/cases.html">
+<link rel="alternate" hreflang="nl" href="https://servicepack.nl/cases.html">
+<link rel="alternate" hreflang="en" href="https://servicepack.nl/en/cases.html">
+<link rel="alternate" hreflang="x-default" href="https://servicepack.nl/cases.html">
 <meta property="og:title" content="Cases — Service Pack BV">
 <meta property="og:description" content="Concrete resultaten: 40.000 cadeausets in 2 weken, 80.000 producten herlabeld, 15.000 stuks rework. 0% gemiste deadlines.">
 <meta property="og:url" content="https://servicepack.nl/cases.html">
@@ -25,10 +28,17 @@
       <div class="nav-links">
         <a href="/">Home</a>
         <a href="/diensten/">Diensten</a>
-        <a href="/over-ons.html">Over ons</a>
         <a href="/sectoren.html">Sectoren</a>
         <a href="/cases.html" class="nav-active">Cases</a>
         <a href="/contact.html">Contact</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-btn" type="button" onclick="toggleNavDropdown(this)">Over ons <span class="nav-dropdown-arrow">▾</span></button>
+          <div class="nav-dropdown-menu">
+            <a href="/over-ons.html">Over ons</a>
+            <a href="/mvo.html">MVO</a>
+            <a href="/blog.html">Blog</a>
+          </div>
+        </div>
         <a href="/contact.html" class="nav-cta">Vraag offerte aan</a>
       </div>
       <div class="lang-switch" aria-label="Taal kiezen"><a href="/cases.html" class="lang-link" aria-current="page">NL</a><div class="lang-divider"></div><a href="/en/cases.html" class="lang-link">EN</a></div>
@@ -36,7 +46,15 @@
     <button class="hamburger" id="hamburger" onclick="toggleMenu()" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="mobile-menu">
-    <a href="/">Home</a><a href="/diensten/">Diensten</a><a href="/over-ons.html">Over ons</a><a href="/sectoren.html">Sectoren</a><a href="/cases.html">Cases</a><a href="/contact.html">Contact</a>
+    <a href="/">Home</a><a href="/diensten/">Diensten</a><a href="/sectoren.html">Sectoren</a><a href="/cases.html">Cases</a><a href="/contact.html">Contact</a>
+    <div class="mobile-dropdown">
+      <button class="mobile-dropdown-btn" type="button" onclick="toggleMobileDropdown(this)">Over ons <span class="nav-dropdown-arrow">▾</span></button>
+      <div class="mobile-dropdown-items">
+        <a href="/over-ons.html">Over ons</a>
+        <a href="/mvo.html">MVO</a>
+        <a href="/blog.html">Blog</a>
+      </div>
+    </div>
     <a href="/contact.html" class="mobile-cta-btn">Vraag offerte aan →</a>
     <div class="mobile-lang">
       <a href="/cases.html" class="mobile-lang-link active">NL</a>
@@ -51,14 +69,14 @@
     <div>
       <span class="section-label" style="margin-bottom:16px; display:block;">Bewijs</span>
       <h1>Hoe wij werken</h1>
-      <p>Geen gladde verkoopverhalen. Concrete situaties, concrete uitvoering, concrete resultaten.</p>
+      <p>Hieronder een aantal voorbeelden van hoe wij werken. Elk anders van aard — maar allemaal een goed beeld van hoe wij te werk gaan. Van structurele samenwerking tot complete uitbesteding: wij gaan veelzijdig aan de slag.</p>
     </div>
     <div class="page-hero-right">
       <div class="hero-stat-row">
-        <div class="hero-stat-box"><div class="hero-stat-num">40k</div><div class="hero-stat-label">eenheden in 2 weken</div></div>
-        <div class="hero-stat-box"><div class="hero-stat-num">80k</div><div class="hero-stat-label">producten herlabeld</div></div>
-        <div class="hero-stat-box"><div class="hero-stat-num">15k</div><div class="hero-stat-label">stuks rework</div></div>
-        <div class="hero-stat-box"><div class="hero-stat-num">0%</div><div class="hero-stat-label">gemiste deadlines</div></div>
+        <div class="hero-stat-box"><div class="hero-stat-num">500k+</div><div class="hero-stat-label">stuks per maand</div></div>
+        <div class="hero-stat-box"><div class="hero-stat-num" style="font-size:1.1rem;">Structureel</div><div class="hero-stat-label">Langdurige samenwerkingen</div></div>
+        <div class="hero-stat-box"><div class="hero-stat-num" style="font-size:1.1rem;">Insourcing</div><div class="hero-stat-label">Tot bij u op locatie</div></div>
+        <div class="hero-stat-box"><div class="hero-stat-num">100%</div><div class="hero-stat-label">uitbesteding mogelijk</div></div>
       </div>
     </div>
   </div>
@@ -72,26 +90,28 @@
         <div style="background:var(--navy); padding:40px; display:flex; flex-direction:column; justify-content:space-between;">
           <div>
             <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
-              <span class="case-tag">E-commerce</span>
-              <span class="case-tag">Repacking · Assembly</span>
+              <span class="case-tag">Consumentenproducten</span>
+              <span class="case-tag">Labeling · Assembly</span>
             </div>
             <div style="font-size:0.75rem; font-weight:700; color:rgba(255,255,255,0.4); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:8px;">Resultaat</div>
-            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">40.000<br>eenheden</div>
-            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">in 2 weken verwerkt</div>
+            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">500.000<br>stuks</div>
+            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">per maand · al 3 jaar</div>
           </div>
         </div>
-        <div style="padding:40px;">
-          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">Seizoenscampagne: 40.000 cadeausets in twee weken</h2>
+        <div style="padding:40px; display:flex; flex-direction:column;">
+          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">500.000 producten per maand gelabeld en geassembleerd</h2>
           <div style="margin-bottom:20px;">
             <div class="case-label">Situatie</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Een online retailer lanceerde een seizoenslijn met cadeausets en had capaciteit nodig voor het samenstellen en omverpakken van 40.000 stuks — in twee weken, inclusief inpakmateriaal en labeling.</p>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Een consumentenproductenmerk vroeg of wij maandelijks 500.000 producten konden stickeren en assembleren voor de retailmarkt. Een structurele opdracht, hoge volumes, strakke eisen.</p>
           </div>
           <div style="margin-bottom:20px;">
-            <div class="case-label">Wat wij deden</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Binnen 48 uur hadden wij de instructies, materialen en planning klaarstaan. Ons team stelde de sets samen, voegde promotiemateriaal toe en zorgde voor retailklare verpakking per collo.</p>
+            <div class="case-label">Wat wij doen</div>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Wij richtten ons proces volledig in op deze samenwerking. Na een opstartfase draaien wij nu in vaste tweewekelijkse cycles: goederen worden gebracht, verwerkt en weer opgehaald. De samenwerking is inmiddels uitgebreid — naast labeling en assembly bouwen wij sinds kort ook displays voor hen.</p>
           </div>
           <div class="case-result">
-            <p>✓ Deadline gehaald · Nul retourmeldingen op verpakkingsfouten · Opdracht herhaald het jaar erna</p>
+            <p>✓ Al 3 jaar een vaste partner</p>
+            <p>✓ 500.000 stuks per maand</p>
+            <p>✓ Samenwerking steeds verder uitgebreid</p>
           </div>
         </div>
       </div>
@@ -100,26 +120,27 @@
         <div style="background:var(--navy-light); padding:40px; display:flex; flex-direction:column; justify-content:space-between;">
           <div>
             <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
-              <span class="case-tag">Fabrikant</span>
-              <span class="case-tag">Rework</span>
+              <span class="case-tag">Groothandel · B2B</span>
+              <span class="case-tag">Fulfillment · Warehousing</span>
             </div>
             <div style="font-size:0.75rem; font-weight:700; color:rgba(255,255,255,0.4); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:8px;">Resultaat</div>
-            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">15.000<br>stuks</div>
-            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">100% gekeurd & verscheept</div>
+            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">8 jaar<br>partner</div>
+            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">dagelijkse uitvoering</div>
           </div>
         </div>
-        <div style="padding:40px;">
-          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">Productieafwijking: 15.000 exportproducten hersteld</h2>
+        <div style="padding:40px; display:flex; flex-direction:column;">
+          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">Dagelijkse B2B-fulfillment voor een feestartikelen groothandel</h2>
           <div style="margin-bottom:20px;">
             <div class="case-label">Situatie</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Een fabrikant ontdekte een labelingsfout bij 15.000 stuks die klaarstonden voor export. De goederen moesten worden herzien, herlabeld en opnieuw verpakt — met een harde deadline vanwege verscheping.</p>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Een groothandel in feestartikelen zocht een betrouwbare fulfillmentpartner voor de structurele verwerking van hun B2B-stroom: wekelijks meerdere inkomende containers en dagelijks uitgaande orders voor hun klanten.</p>
           </div>
           <div style="margin-bottom:20px;">
-            <div class="case-label">Wat wij deden</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Service Pack nam de volledige batch over, voerde een 100% inspectie uit, verving de labels en herzette de verpakking conform exportspecificaties. Documentatie werd meegeleverd.</p>
+            <div class="case-label">Wat wij doen</div>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Wij ontvangen wekelijks meerdere containers, slaan de goederen op en picken dagelijks orders op artikelniveau. De gepickte orders worden door ons samengesteld tot dozen of pallets, klaar voor ophaling door hun klanten.</p>
           </div>
           <div class="case-result">
-            <p>✓ Alle 15.000 stuks goedgekeurd · Op tijd verscheept · Geen vertraging in supply chain</p>
+            <p>✓ Al 8 jaar vaste fulfillmentpartner</p>
+            <p>✓ Dagelijkse uitvoering zonder verstoringen</p>
           </div>
         </div>
       </div>
@@ -128,26 +149,28 @@
         <div style="background:var(--navy); padding:40px; display:flex; flex-direction:column; justify-content:space-between;">
           <div>
             <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
-              <span class="case-tag">Importeur</span>
-              <span class="case-tag">Labeling · Hub</span>
+              <span class="case-tag">Fabrikant</span>
+              <span class="case-tag">Assembly · Fulfillment</span>
             </div>
             <div style="font-size:0.75rem; font-weight:700; color:rgba(255,255,255,0.4); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:8px;">Resultaat</div>
-            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">80.000<br>producten</div>
-            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">conform EU-regelgeving gelabeld</div>
+            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">Volledig<br>ontzorgd</div>
+            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">eigen machines bij ons in gebruik</div>
           </div>
         </div>
-        <div style="padding:40px;">
-          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">EU-regelgeving: 80.000 producten opnieuw gelabeld</h2>
+        <div style="padding:40px; display:flex; flex-direction:column;">
+          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">Complete uitbesteding van assemblage en orderpicking</h2>
           <div style="margin-bottom:20px;">
             <div class="case-label">Situatie</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Een importeur ontving drie containers met producten bestemd voor de Nederlandse en Belgische markt. Nieuwe EU-regelgeving verplichtte aanvullende labeling — iets dat niet voorzien was in het importproces.</p>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Een fabrikant besloot zijn volledige assemblage- en pickingafdeling uit te besteden aan Service Pack. Inclusief de eigen machines, die nu bij ons staan opgesteld en door ons worden bediend.</p>
           </div>
           <div style="margin-bottom:20px;">
-            <div class="case-label">Wat wij deden</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Goederen werden opgeslagen in onze hub, voorzien van correcte meertalige labels en daarna gedistribueerd naar de juiste bestemmingen per land.</p>
+            <div class="case-label">Wat wij doen</div>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Wij verzorgen de volledige operatie — van assemblage op hun machines tot dagelijkse orderpicking. De klant hoeft zich nergens meer druk over te maken: producten staan dagelijks klaar voor ophaling.</p>
           </div>
           <div class="case-result">
-            <p>✓ 80.000 producten gelabeld en gedistribueerd in 3 weken · Geen douaneproblemen</p>
+            <p>✓ Volledige ontzorging</p>
+            <p>✓ Eigen machines operationeel bij Service Pack</p>
+            <p>✓ Dagelijkse uitvoering</p>
           </div>
         </div>
       </div>
@@ -156,26 +179,28 @@
         <div style="background:var(--navy-light); padding:40px; display:flex; flex-direction:column; justify-content:space-between;">
           <div>
             <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
-              <span class="case-tag">Retail</span>
-              <span class="case-tag">Repacking · Labeling</span>
+              <span class="case-tag">Insourcing</span>
+              <span class="case-tag">Operationeel beheer · Flex-inzet</span>
             </div>
             <div style="font-size:0.75rem; font-weight:700; color:rgba(255,255,255,0.4); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:8px;">Resultaat</div>
-            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">25.000<br>stuks</div>
-            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">retailklaar in 1,5 week</div>
+            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">30–50<br>man</div>
+            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">op locatie · al bijna een jaar</div>
           </div>
         </div>
-        <div style="padding:40px;">
-          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">Seizoenseditie: 25.000 stuks omgepakt en retailklaar</h2>
+        <div style="padding:40px; display:flex; flex-direction:column;">
+          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">Volledige operationele inzet op locatie bij de klant</h2>
           <div style="margin-bottom:20px;">
             <div class="case-label">Situatie</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Een Europees retailmerk introduceerde een beperkte seizoenseditie met nieuwe verpakking. Bestaande voorraad moest worden omgepakt en voorzien van nieuwe sleeves — 25.000 stuks in anderhalve week.</p>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Een bedrijf zocht een partner die niet alleen werk overnam, maar de complete operatie op hun eigen locatie kon uitvoeren en beheren. Geen uitzendbureau, maar een partij die de volledige verantwoordelijkheid op zich neemt.</p>
           </div>
           <div style="margin-bottom:20px;">
-            <div class="case-label">Wat wij deden</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Wij ontvingen de voorraad, voorzagen elk product van de seizoenssleeve, controleerden barcodes en leverden retailklaar aan het distributiecentrum.</p>
+            <div class="case-label">Wat wij doen</div>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Wij plaatsen een team van 30 tot 50 eigen medewerkers bij de klant op locatie en verzorgen daar alle operationele werkzaamheden. Het team schaalt flexibel op en af naar de vraag van de klant — zonder dat de klant zich bezighoudt met planning, bezetting of aansturing.</p>
           </div>
           <div class="case-result">
-            <p>✓ Op tijd in de schappen · Nul klachten vanuit de retailer op kwaliteit of verpakking</p>
+            <p>✓ Al bijna een jaar operationeel op locatie</p>
+            <p>✓ Flexibel op- en afschaalbaar</p>
+            <p>✓ Volledige ontzorging</p>
           </div>
         </div>
       </div>
@@ -217,6 +242,19 @@
 </footer>
 
 <script>
+function toggleMobileDropdown(btn) {
+  btn.classList.toggle('open');
+  btn.nextElementSibling.classList.toggle('open');
+}
+function toggleNavDropdown(btn) {
+  const dd = btn.closest('.nav-dropdown');
+  dd.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-dropdown')) {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(d){ d.classList.remove('open'); });
+  }
+});
 function toggleMenu() {
   const menu = document.getElementById('mobile-menu');
   const hamburger = document.getElementById('hamburger');

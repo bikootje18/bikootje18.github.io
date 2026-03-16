@@ -2,11 +2,14 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fulfillment uitbesteden — Service Pack BV | Orders verwerken zonder eigen magazijn</title>
 <meta name="description" content="Fulfillment uitbesteden aan Service Pack BV. Wij verzorgen ontvangst, opslag, pick & pack en verzending. Schaalbaar, snel inzetbaar. ISO 9001 gecertificeerd.">
 <link rel="canonical" href="https://servicepack.nl/diensten/fulfillment.html">
+<link rel="alternate" hreflang="nl" href="https://servicepack.nl/diensten/fulfillment.html">
+<link rel="alternate" hreflang="en" href="https://servicepack.nl/en/services/fulfillment.html">
+<link rel="alternate" hreflang="x-default" href="https://servicepack.nl/diensten/fulfillment.html">
 <meta property="og:title" content="Fulfillment uitbesteden — Service Pack BV">
 <meta property="og:description" content="Orders verwerken zonder eigen magazijn. Schaalbaar, snel inzetbaar.">
 <meta property="og:url" content="https://servicepack.nl/diensten/fulfillment.html">
@@ -25,10 +28,17 @@
       <div class="nav-links">
         <a href="/">Home</a>
         <a href="/diensten/" class="nav-active">Diensten</a>
-        <a href="/over-ons.html">Over ons</a>
         <a href="/sectoren.html">Sectoren</a>
         <a href="/cases.html">Cases</a>
         <a href="/contact.html">Contact</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-btn" type="button" onclick="toggleNavDropdown(this)">Over ons <span class="nav-dropdown-arrow">▾</span></button>
+          <div class="nav-dropdown-menu">
+            <a href="/over-ons.html">Over ons</a>
+            <a href="/mvo.html">MVO</a>
+            <a href="/blog.html">Blog</a>
+          </div>
+        </div>
         <a href="/contact.html" class="nav-cta">Vraag offerte aan</a>
       </div>
       <div class="lang-switch" aria-label="Taal kiezen"><a href="/diensten/fulfillment.html" class="lang-link" aria-current="page">NL</a><div class="lang-divider"></div><a href="/en/services/fulfillment.html" class="lang-link">EN</a></div>
@@ -36,7 +46,15 @@
     <button class="hamburger" id="hamburger" onclick="toggleMenu()" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="mobile-menu">
-    <a href="/">Home</a><a href="/diensten/">Diensten</a><a href="/over-ons.html">Over ons</a><a href="/sectoren.html">Sectoren</a><a href="/cases.html">Cases</a><a href="/contact.html">Contact</a>
+    <a href="/">Home</a><a href="/diensten/">Diensten</a><a href="/sectoren.html">Sectoren</a><a href="/cases.html">Cases</a><a href="/contact.html">Contact</a>
+    <div class="mobile-dropdown">
+      <button class="mobile-dropdown-btn" type="button" onclick="toggleMobileDropdown(this)">Over ons <span class="nav-dropdown-arrow">▾</span></button>
+      <div class="mobile-dropdown-items">
+        <a href="/over-ons.html">Over ons</a>
+        <a href="/mvo.html">MVO</a>
+        <a href="/blog.html">Blog</a>
+      </div>
+    </div>
     <a href="/contact.html" class="mobile-cta-btn">Vraag offerte aan →</a>
     <div class="mobile-lang">
       <a href="/diensten/fulfillment.html" class="mobile-lang-link active">NL</a>
@@ -70,7 +88,7 @@
 
 <section class="section">
   <div class="section-inner">
-    <div style="display:grid; grid-template-columns:1.2fr 1fr; gap:64px; align-items:start;">
+    <div class="service-detail-grid">
       <div>
         <span class="section-label">Wat wij doen</span>
         <h2 class="section-title">Orders verwerkt, deadline gehaald</h2>
@@ -209,6 +227,19 @@
 </footer>
 
 <script>
+function toggleMobileDropdown(btn) {
+  btn.classList.toggle('open');
+  btn.nextElementSibling.classList.toggle('open');
+}
+function toggleNavDropdown(btn) {
+  const dd = btn.closest('.nav-dropdown');
+  dd.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-dropdown')) {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(d){ d.classList.remove('open'); });
+  }
+});
 function toggleMenu() {
   const menu = document.getElementById('mobile-menu');
   const hamburger = document.getElementById('hamburger');

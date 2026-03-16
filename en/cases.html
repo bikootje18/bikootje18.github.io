@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cases — Service Pack BV | Concrete results in fulfillment and co-packing</title>
 <meta name="description" content="View concrete cases from Service Pack BV: assembling gift sets, rework of export products, EU labeling for importers and seasonal packaging for retail.">
 <link rel="canonical" href="https://servicepack.nl/en/cases.html">
+<link rel="alternate" hreflang="nl" href="https://servicepack.nl/cases.html">
+<link rel="alternate" hreflang="en" href="https://servicepack.nl/en/cases.html">
+<link rel="alternate" hreflang="x-default" href="https://servicepack.nl/cases.html">
 <meta property="og:title" content="Cases — Service Pack BV">
 <meta property="og:description" content="Concrete results: 40,000 gift sets in 2 weeks, 80,000 products relabeled, 15,000 items rework. 0% missed deadlines.">
 <meta property="og:url" content="https://servicepack.nl/en/cases.html">
@@ -25,10 +28,17 @@
       <div class="nav-links">
         <a href="/en/">Home</a>
         <a href="/en/services/">Services</a>
-        <a href="/en/about.html">About</a>
         <a href="/en/sectors.html">Sectors</a>
         <a href="/en/cases.html" class="nav-active">Cases</a>
         <a href="/en/contact.html">Contact</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-btn" type="button" onclick="toggleNavDropdown(this)">About <span class="nav-dropdown-arrow">▾</span></button>
+          <div class="nav-dropdown-menu">
+            <a href="/en/about.html">About us</a>
+            <a href="/en/mvo.html">CSR</a>
+            <a href="/en/blog.html">Blog</a>
+          </div>
+        </div>
         <a href="/en/contact.html" class="nav-cta">Request a quote</a>
       </div>
       <div class="lang-switch" aria-label="Choose language"><a href="/cases.html" class="lang-link">NL</a><div class="lang-divider"></div><a href="/en/cases.html" class="lang-link" aria-current="page">EN</a></div>
@@ -36,7 +46,15 @@
     <button class="hamburger" id="hamburger" onclick="toggleMenu()" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="mobile-menu">
-    <a href="/en/">Home</a><a href="/en/services/">Services</a><a href="/en/about.html">About</a><a href="/en/sectors.html">Sectors</a><a href="/en/cases.html">Cases</a><a href="/en/contact.html">Contact</a>
+    <a href="/en/">Home</a><a href="/en/services/">Services</a><a href="/en/sectors.html">Sectors</a><a href="/en/cases.html">Cases</a><a href="/en/contact.html">Contact</a>
+    <div class="mobile-dropdown">
+      <button class="mobile-dropdown-btn" type="button" onclick="toggleMobileDropdown(this)">About <span class="nav-dropdown-arrow">▾</span></button>
+      <div class="mobile-dropdown-items">
+        <a href="/en/about.html">About us</a>
+        <a href="/en/mvo.html">CSR</a>
+        <a href="/en/blog.html">Blog</a>
+      </div>
+    </div>
     <a href="/en/contact.html" class="mobile-cta-btn">Request a quote →</a>
     <div class="mobile-lang">
       <a href="/cases.html" class="mobile-lang-link">NL</a>
@@ -51,14 +69,14 @@
     <div>
       <span class="section-label" style="margin-bottom:16px; display:block;">Proof</span>
       <h1>How we work</h1>
-      <p>No polished sales talk. Concrete situations, concrete execution, concrete results.</p>
+      <p>A few examples of how we work. Each one different — but all of them a good reflection of our approach. From long-term partnerships to complete outsourcing: we work in many different ways.</p>
     </div>
     <div class="page-hero-right">
       <div class="hero-stat-row">
-        <div class="hero-stat-box"><div class="hero-stat-num">40k</div><div class="hero-stat-label">units in 2 weeks</div></div>
-        <div class="hero-stat-box"><div class="hero-stat-num">80k</div><div class="hero-stat-label">products relabeled</div></div>
-        <div class="hero-stat-box"><div class="hero-stat-num">15k</div><div class="hero-stat-label">items rework</div></div>
-        <div class="hero-stat-box"><div class="hero-stat-num">0%</div><div class="hero-stat-label">missed deadlines</div></div>
+        <div class="hero-stat-box"><div class="hero-stat-num">500k+</div><div class="hero-stat-label">units per month</div></div>
+        <div class="hero-stat-box"><div class="hero-stat-num" style="font-size:1.1rem;">Structural</div><div class="hero-stat-label">Long-term partnerships</div></div>
+        <div class="hero-stat-box"><div class="hero-stat-num" style="font-size:1.1rem;">Insourcing</div><div class="hero-stat-label">On-site at your location</div></div>
+        <div class="hero-stat-box"><div class="hero-stat-num">100%</div><div class="hero-stat-label">outsourcing possible</div></div>
       </div>
     </div>
   </div>
@@ -69,113 +87,120 @@
     <div style="display:grid; gap:32px;">
 
       <div class="case-split-card">
-        <div style="background:var(--navy); padding:40px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div style="background:var(--navy); padding:40px; display:flex; flex-direction:column; justify-content:center;">
           <div>
             <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
-              <span class="case-tag">E-commerce</span>
-              <span class="case-tag">Repacking · Assembly</span>
+              <span class="case-tag">Consumer products</span>
+              <span class="case-tag">Labeling · Assembly</span>
             </div>
             <div style="font-size:0.75rem; font-weight:700; color:rgba(255,255,255,0.4); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:8px;">Result</div>
-            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">40,000<br>units</div>
-            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">processed in 2 weeks</div>
+            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">500,000<br>units</div>
+            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">per month · 3 years running</div>
           </div>
         </div>
-        <div style="padding:40px;">
-          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">Seasonal campaign: 40,000 gift sets in two weeks</h2>
+        <div style="padding:40px; display:flex; flex-direction:column;">
+          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">500,000 products labeled and assembled every month</h2>
           <div style="margin-bottom:20px;">
             <div class="case-label">Situation</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">An online retailer launched a seasonal line with gift sets and needed capacity to assemble and repack 40,000 units — in two weeks, including packaging materials and labeling.</p>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">A consumer products brand asked whether we could label and assemble 500,000 products per month for the retail market. A structural assignment, high volumes, strict requirements.</p>
           </div>
           <div style="margin-bottom:20px;">
-            <div class="case-label">What we did</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Within 48 hours we had the instructions, materials and planning ready. Our team assembled the sets, added promotional material and ensured retail-ready packaging per unit.</p>
+            <div class="case-label">What we do</div>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">We structured our entire process around this partnership. After an initial setup phase, we now operate in fixed fortnightly cycles: goods are delivered, processed and collected. The collaboration has since expanded — alongside labeling and assembly, we now also build displays for them.</p>
           </div>
           <div class="case-result">
-            <p>✓ Deadline met · Zero return reports for packaging errors · Order repeated the following year</p>
+            <p>✓ 3-year partnership</p>
+            <p>✓ 500,000 units per month</p>
+            <p>✓ Collaboration continuously expanding</p>
           </div>
         </div>
       </div>
 
       <div class="case-split-card">
-        <div style="background:var(--navy-light); padding:40px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div style="background:var(--navy-light); padding:40px; display:flex; flex-direction:column; justify-content:center;">
+          <div>
+            <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
+              <span class="case-tag">Wholesale · B2B</span>
+              <span class="case-tag">Fulfillment · Warehousing</span>
+            </div>
+            <div style="font-size:0.75rem; font-weight:700; color:rgba(255,255,255,0.4); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:8px;">Result</div>
+            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">8 years<br>partner</div>
+            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">daily execution</div>
+          </div>
+        </div>
+        <div style="padding:40px; display:flex; flex-direction:column;">
+          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">Daily B2B fulfillment for a party supplies wholesaler</h2>
+          <div style="margin-bottom:20px;">
+            <div class="case-label">Situation</div>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">A party supplies wholesaler needed a reliable fulfillment partner for the structural processing of their B2B flow: multiple incoming containers per week and daily outbound orders for their customers.</p>
+          </div>
+          <div style="margin-bottom:20px;">
+            <div class="case-label">What we do</div>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">We receive multiple containers weekly, store the goods and pick orders daily at item level. The picked orders are assembled by us into boxes or pallets, ready for collection by their customers.</p>
+          </div>
+          <div class="case-result">
+            <p>✓ 8-year fulfillment partnership</p>
+            <p>✓ Daily execution without disruption</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-split-card">
+        <div style="background:var(--navy); padding:40px; display:flex; flex-direction:column; justify-content:center;">
           <div>
             <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
               <span class="case-tag">Manufacturer</span>
-              <span class="case-tag">Rework</span>
+              <span class="case-tag">Assembly · Fulfillment</span>
             </div>
             <div style="font-size:0.75rem; font-weight:700; color:rgba(255,255,255,0.4); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:8px;">Result</div>
-            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">15,000<br>items</div>
-            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">100% inspected &amp; shipped</div>
+            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">Fully<br>handled</div>
+            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">client's own machines at our site</div>
           </div>
         </div>
-        <div style="padding:40px;">
-          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">Production deviation: 15,000 export products restored</h2>
+        <div style="padding:40px; display:flex; flex-direction:column;">
+          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">Complete outsourcing of assembly and order picking</h2>
           <div style="margin-bottom:20px;">
             <div class="case-label">Situation</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">A manufacturer discovered a labeling error on 15,000 items ready for export. The goods needed to be reviewed, relabeled and repacked — with a hard deadline due to shipping.</p>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">A manufacturer decided to fully outsource their assembly and picking department to Service Pack — including their own machines, which are now installed and operated at our site.</p>
           </div>
           <div style="margin-bottom:20px;">
-            <div class="case-label">What we did</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Service Pack took over the entire batch, carried out a 100% inspection, replaced the labels and reset the packaging in accordance with export specifications. Full documentation was included.</p>
+            <div class="case-label">What we do</div>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">We manage the entire operation — from assembly on their machines to daily order picking. The client has nothing to worry about: products are ready for collection every day.</p>
           </div>
           <div class="case-result">
-            <p>✓ All 15,000 items approved · Shipped on time · No supply chain delay</p>
+            <p>✓ Complete outsourcing</p>
+            <p>✓ Client's machines operational at Service Pack</p>
+            <p>✓ Daily execution</p>
           </div>
         </div>
       </div>
 
       <div class="case-split-card">
-        <div style="background:var(--navy); padding:40px; display:flex; flex-direction:column; justify-content:space-between;">
+        <div style="background:var(--navy-light); padding:40px; display:flex; flex-direction:column; justify-content:center;">
           <div>
             <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
-              <span class="case-tag">Importer</span>
-              <span class="case-tag">Labeling · Hub</span>
+              <span class="case-tag">Insourcing</span>
+              <span class="case-tag">Operations management · Flexible staffing</span>
             </div>
             <div style="font-size:0.75rem; font-weight:700; color:rgba(255,255,255,0.4); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:8px;">Result</div>
-            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">80,000<br>products</div>
-            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">labeled in compliance with EU regulations</div>
+            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">30–50<br>people</div>
+            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">on-site · going on a year</div>
           </div>
         </div>
-        <div style="padding:40px;">
-          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">EU regulation: 80,000 products relabeled</h2>
+        <div style="padding:40px; display:flex; flex-direction:column;">
+          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">Full operational deployment at the client's site</h2>
           <div style="margin-bottom:20px;">
             <div class="case-label">Situation</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">An importer received three containers with products destined for the Dutch and Belgian market. New EU legislation required additional labeling — something not anticipated in the import process.</p>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">A company needed a partner who could not just take on work, but run the complete operation at their own location. Not a staffing agency — a partner that takes full responsibility for the entire operation.</p>
           </div>
           <div style="margin-bottom:20px;">
-            <div class="case-label">What we did</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">Goods were stored in our hub, fitted with correct multilingual labels and then distributed to the right destinations per country.</p>
+            <div class="case-label">What we do</div>
+            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">We place a team of 30 to 50 of our own staff at the client's site and handle all operational activities there. The team scales flexibly up and down with demand — without the client having to deal with planning, staffing or supervision.</p>
           </div>
           <div class="case-result">
-            <p>✓ 80,000 products labeled and distributed in 3 weeks · No customs issues</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="case-split-card">
-        <div style="background:var(--navy-light); padding:40px; display:flex; flex-direction:column; justify-content:space-between;">
-          <div>
-            <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px;">
-              <span class="case-tag">Retail</span>
-              <span class="case-tag">Repacking · Labeling</span>
-            </div>
-            <div style="font-size:0.75rem; font-weight:700; color:rgba(255,255,255,0.4); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:8px;">Result</div>
-            <div style="font-size:2rem; font-weight:800; color:#fff; font-family:'Space Grotesk',sans-serif; line-height:1.2;">25,000<br>items</div>
-            <div style="color:rgba(255,255,255,0.5); font-size:0.875rem; margin-top:8px;">retail-ready in 1.5 weeks</div>
-          </div>
-        </div>
-        <div style="padding:40px;">
-          <h2 style="font-size:1.5rem; font-weight:800; color:var(--navy); margin-bottom:20px;">Seasonal edition: 25,000 items repacked and retail-ready</h2>
-          <div style="margin-bottom:20px;">
-            <div class="case-label">Situation</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">A European retail brand introduced a limited seasonal edition with new packaging. Existing stock needed to be repacked and fitted with new sleeves — 25,000 items in one and a half weeks.</p>
-          </div>
-          <div style="margin-bottom:20px;">
-            <div class="case-label">What we did</div>
-            <p style="color:var(--muted); line-height:1.75; font-size:0.9375rem;">We received the stock, fitted each product with the seasonal sleeve, verified barcodes and delivered retail-ready to the distribution centre.</p>
-          </div>
-          <div class="case-result">
-            <p>✓ On shelves on time · Zero complaints from the retailer on quality or packaging</p>
+            <p>✓ Operational on-site for nearly a year</p>
+            <p>✓ Flexible up and down scaling</p>
+            <p>✓ Fully managed</p>
           </div>
         </div>
       </div>
@@ -217,6 +242,19 @@
 </footer>
 
 <script>
+function toggleMobileDropdown(btn) {
+  btn.classList.toggle('open');
+  btn.nextElementSibling.classList.toggle('open');
+}
+function toggleNavDropdown(btn) {
+  const dd = btn.closest('.nav-dropdown');
+  dd.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-dropdown')) {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(d){ d.classList.remove('open'); });
+  }
+});
 function toggleMenu() {
   const menu = document.getElementById('mobile-menu');
   const hamburger = document.getElementById('hamburger');

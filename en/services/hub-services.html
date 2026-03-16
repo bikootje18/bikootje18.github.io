@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hub services — Service Pack BV | Cross-docking, consolidation and distribution</title>
 <meta name="description" content="Hub services at Service Pack BV. Cross-docking, consolidation and distribution from our central hub. 30 minutes from Rotterdam and Antwerp. ISO 9001 certified.">
 <link rel="canonical" href="https://servicepack.nl/en/services/hub-services.html">
+<link rel="alternate" hreflang="nl" href="https://servicepack.nl/diensten/hub-services.html">
+<link rel="alternate" hreflang="en" href="https://servicepack.nl/en/services/hub-services.html">
+<link rel="alternate" hreflang="x-default" href="https://servicepack.nl/diensten/hub-services.html">
 <meta property="og:title" content="Hub services — Service Pack BV | Cross-docking, consolidation and distribution">
 <meta property="og:description" content="Hub services at Service Pack BV. Cross-docking, consolidation and distribution from our central hub. 30 minutes from Rotterdam and Antwerp. ISO 9001 certified.">
 <meta property="og:url" content="https://servicepack.nl/en/services/hub-services.html">
@@ -24,10 +27,17 @@
       <div class="nav-links">
         <a href="/en/">Home</a>
         <a href="/en/services/" class="nav-active">Services</a>
-        <a href="/en/about.html">About</a>
         <a href="/en/sectors.html">Sectors</a>
         <a href="/en/cases.html">Cases</a>
         <a href="/en/contact.html">Contact</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-btn" type="button" onclick="toggleNavDropdown(this)">About <span class="nav-dropdown-arrow">▾</span></button>
+          <div class="nav-dropdown-menu">
+            <a href="/en/about.html">About us</a>
+            <a href="/en/mvo.html">CSR</a>
+            <a href="/en/blog.html">Blog</a>
+          </div>
+        </div>
         <a href="/en/contact.html" class="nav-cta">Request a quote</a>
       </div>
       <div class="lang-switch" aria-label="Choose language"><a href="/diensten/hub-services.html" class="lang-link">NL</a><div class="lang-divider"></div><a href="/en/services/hub-services.html" class="lang-link" aria-current="page">EN</a></div>
@@ -35,7 +45,15 @@
     <button class="hamburger" id="hamburger" onclick="toggleMenu()" type="button" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
   <div class="mobile-menu" id="mobile-menu">
-    <a href="/en/">Home</a><a href="/en/services/">Services</a><a href="/en/about.html">About</a><a href="/en/sectors.html">Sectors</a><a href="/en/cases.html">Cases</a><a href="/en/contact.html">Contact</a>
+    <a href="/en/">Home</a><a href="/en/services/">Services</a><a href="/en/sectors.html">Sectors</a><a href="/en/cases.html">Cases</a><a href="/en/contact.html">Contact</a>
+    <div class="mobile-dropdown">
+      <button class="mobile-dropdown-btn" type="button" onclick="toggleMobileDropdown(this)">About <span class="nav-dropdown-arrow">▾</span></button>
+      <div class="mobile-dropdown-items">
+        <a href="/en/about.html">About us</a>
+        <a href="/en/mvo.html">CSR</a>
+        <a href="/en/blog.html">Blog</a>
+      </div>
+    </div>
     <a href="/en/contact.html" class="mobile-cta-btn">Request a quote &#x2192;</a>
     <div class="mobile-lang">
       <a href="/diensten/hub-services.html" class="mobile-lang-link">NL</a>
@@ -67,7 +85,7 @@
 </div>
 <section class="section">
   <div class="section-inner">
-    <div style="display:grid; grid-template-columns:1.2fr 1fr; gap:64px; align-items:start;">
+    <div class="service-detail-grid">
       <div>
         <span class="section-label">What we do</span>
         <h2 class="section-title">Your hub in the European supply chain</h2>
@@ -194,6 +212,19 @@
   </div>
 </footer>
 <script>
+function toggleMobileDropdown(btn) {
+  btn.classList.toggle('open');
+  btn.nextElementSibling.classList.toggle('open');
+}
+function toggleNavDropdown(btn) {
+  const dd = btn.closest('.nav-dropdown');
+  dd.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-dropdown')) {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(d){ d.classList.remove('open'); });
+  }
+});
 function toggleMenu() {
   const menu = document.getElementById('mobile-menu');
   const hamburger = document.getElementById('hamburger');

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Service Pack BV — Flexible operational partner</title>
 <meta name="description" content="Service Pack BV provides fulfillment, warehousing, labeling, rework, assembly, repacking and hub services. Your operational partner in the Netherlands.">
@@ -1740,7 +1741,20 @@ h1, h2, h3, h4 {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  function toggleMenu() {
+  function toggleMobileDropdown(btn) {
+  btn.classList.toggle('open');
+  btn.nextElementSibling.classList.toggle('open');
+}
+function toggleNavDropdown(btn) {
+  const dd = btn.closest('.nav-dropdown');
+  dd.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  if (!e.target.closest('.nav-dropdown')) {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function(d){ d.classList.remove('open'); });
+  }
+});
+function toggleMenu() {
     const menu = document.getElementById('mobile-menu');
     const hamburger = document.getElementById('hamburger');
     menu.classList.toggle('open');
